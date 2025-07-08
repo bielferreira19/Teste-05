@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maressa Brows - Especialista em design de sobrancelhas, henna e micropigmentação em ambiente acolhedor e profissional.">
+  <title>Maressa Brows</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Lora', serif;
+      background-color: #fffaf8;
+      color: #5a3e36;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #5a3e36;
+      font-weight: bold;
+    }
+    .hero {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1588776814546-bb2a63b6f784') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: 0;
+    }
+    .hero h1, .hero a {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      background: rgba(255,255,255,0.8);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+    .hero a {
+      background-color: #c8a38d;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .hero a:hover {
+      background-color: #a37e6e;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .service-box {
+      background-color: #fdf6f2;
+      padding: 30px;
+      border-radius: 12px;
+      flex: 1;
+      min-width: 200px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .service-box img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    footer {
+      background-color: #fff4ef;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 24px;
+      text-decoration: none;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maressa Brows</h1>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Realce sua beleza com sofisticação</h1>
+    <a href="https://wa.me/5562993562351" target="_blank">Agende agora</a>
+  </div>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>Maressa Brows é especialista em realçar a beleza natural através de técnicas modernas como design de sobrancelhas, micropigmentação e cuidados com a pele. Com um espaço acolhedor e atendimento personalizado, buscamos sempre a excelência.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/eyebrow.png" alt="Ícone representando o serviço de design de sobrancelhas">
+        <h3>Design de Sobrancelhas</h3>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/makeup.png" alt="Ícone representando serviço de henna">
+        <h3>Henna</h3>
+      </div>
+      <div class="service-box">
+        <img src="https://img.icons8.com/ios-filled/100/000000/face-mask.png" alt="Ícone representando serviço de micropigmentação facial">
+        <h3>Micropigmentação</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="produtos">
+    <h2>Produtos</h2>
+    <p style="text-align: center;">Em breve você poderá adquirir nossos produtos de beleza diretamente pelo WhatsApp.</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p style="text-align: center;">Fale conosco pelo WhatsApp e acompanhe novidades pelo Instagram!</p>
+  </section>
+
+  <a href="https://wa.me/5562993562351" class="whatsapp" target="_blank">💬</a>
+
+  <footer>
+    <p>&copy; 2025 Maressa Brows. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
